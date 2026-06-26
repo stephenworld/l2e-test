@@ -40,6 +40,28 @@
             <img src="/assets/images/image-avatar.png" alt="image avatar" class="avatar">
         </div>
     </nav>
+      <section data-basket="basket" class="basket d-none">
+          <h4>Cart</h4>
+          <hr>
+          <div class="filledOrEmpty d-flex">
+              <div data-selectProduct="selectProduct" class="d-none">
+                <div class="filled d-flex">
+                      <img class="cartImage" src="/assets/images/image-product-1-thumbnail.jpg"
+                        alt="image product 1 thumbnail">
+                      <p>Fall Limited Sneakers ₦125 x
+                        <span data-cartQuantity="cartQuantity">1</span>
+                        <strong data-cartPrice="cartPrice">₦125.00</strong>
+                      </p>
+                      <button data-resetCart="resetCart"><img src="/assets/images/icon-delete.svg"
+                        alt="delete"></button>
+                  </div>
+                  <a href="https://paystack.shop/pay/codewithstephen" target="_blank" rel="noopener noreferrer">
+                    <button class="checkout">Checkout</button>
+                  </a>
+              </div>
+              <p data-noSelection="noSelection" class="empty">Your Cart is empty.</p>
+          </div>
+      </section>
 
     <main class="d-flex">
         <section>
