@@ -65,11 +65,11 @@ addToCart.addEventListener("click", (event) => {
 // This a function that calculate the price of the product related to the quantity selected by users
 const priceCalculator = () => {
   if (actualValue === 0) {
-    price.innerText = "$125.00";
-    discount.innerText = "$250.00";
+    price.innerText = "₦125.00";
+    discount.innerText = "₦250.00";
   } else {
-    price.innerText = `$${actualValue * 125}.00`;
-    discount.innerText = `$${actualValue * 250}.00`;
+    price.innerText = `₦${actualValue * 125}.00`;
+    discount.innerText = `₦${actualValue * 250}.00`;
     cartPrice.innerText = price.innerText;
   }
   updateCart();
@@ -92,8 +92,8 @@ resetCart.addEventListener("click", (event) => {
   noSelection.classList.remove("d-none");
   quantity.innerText = actualValue;
   totalItems.innerText = "0";
-  price.innerText = "$125.00";
-  discount.innerText = "$250.00";
+  price.innerText = "₦125.00";
+  discount.innerText = "₦250.00";
 });
 
 // Make cart visible
@@ -111,10 +111,10 @@ cart.addEventListener("click", (event) => {
 const imageThumbnail = document.querySelectorAll("[data-imageThumbnail]");
 const banner = document.querySelector("[data-banner]");
 const bannerGallery = [
-  { src: "./images/image-product-1.jpg" },
-  { src: "./images/image-product-2.jpg" },
-  { src: "./images/image-product-3.jpg" },
-  { src: "./images/image-product-4.jpg" },
+  { src: "/assets/images/image-product-1.jpg" },
+  { src: "/assets/images/image-product-2.jpg" },
+  { src: "/assets/images/image-product-3.jpg" },
+  { src: "/assets/images/image-product-4.jpg" },
 ];
 
 // This function makes my image ready before the user request for it

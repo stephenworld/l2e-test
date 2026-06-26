@@ -218,7 +218,7 @@ ul {
   list-style: none;
 }
 li {
-  cursor: pointer;
+  cursor: not-allowed;
 }
 button {
   outline: none;
